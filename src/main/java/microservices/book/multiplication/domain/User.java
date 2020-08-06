@@ -1,27 +1,23 @@
 package microservices.book.multiplication.domain;
 
-
 import lombok.EqualsAndHashCode;
 import lombok.Getter;
 import lombok.RequiredArgsConstructor;
 import lombok.ToString;
 
 /**
- * Represents a Multiplication(a * b)
+ * Stores information to identify the user.
  */
 @Getter
 @RequiredArgsConstructor
 @ToString
 @EqualsAndHashCode
-public final class Multiplication {
+public final class User {
+    private final String alias;
 
-    // Both factors
-    private final int factorA;
-    private final int factorB;
-
-    //Empty constructor for JSON (de)serialization
-    Multiplication()
+    //Empty contructor for JSON(de)serialization
+    protected User()
     {
-        this(0,0);
+        alias=null;
     }
 }
