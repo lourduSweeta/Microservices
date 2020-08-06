@@ -3,7 +3,6 @@ package microservices.book.multiplication.service;
 import microservices.book.multiplication.domain.MulltiplicationResultAttempt;
 import microservices.book.multiplication.domain.Multiplication;
 import microservices.book.multiplication.domain.User;
-import org.graalvm.compiler.lir.LIRInstruction;
 import org.junit.Before;
 import org.junit.Test;
 import org.mockito.Mock;
@@ -45,7 +44,7 @@ public class MultiplicationServiceImplTest {
         Multiplication multiplication =new Multiplication(30,60);
         User user = new User("Joshua");
         MulltiplicationResultAttempt attempt= new MulltiplicationResultAttempt(
-                user,multiplication,3000
+                user,multiplication,1800
         );
 
         //when
